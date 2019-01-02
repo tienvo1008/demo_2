@@ -12,7 +12,7 @@
     {{ Html::style("https://fonts.googleapis.com/css?family=Nunito") }}
 
     {!! Html::script('js/app.js') !!}
-
+    {!! Html::script('js/logout.js') !!}
     {!! Html::style('/css/app.css') !!}
 </head>
 <body>
@@ -51,11 +51,12 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a id="logout" class="dropdown-item" href="{{ route('logout') }}" >
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                                        @lang('login.logout')
                                     </a>
-                                    {!! Form::open(['method'=>'POST', 'routes'=>'logout', 'id' => 'logout-form']) !!}
-
+                                    {!! Form::open(['method' => 'POST', 'routes' =>'logout','id' => 'logout-form']) !!}
                                     {!! Form::close() !!}
                                 </div>
                             </li>

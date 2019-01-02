@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     {!! Form::open(['method'=>'POST', 'routes'=>'login']) !!}
-
+                    @csrf
                         <div class="form-group row">
                             {!! Form::label('email', trans('login.email'), ['class' => 'col-md-4 col-form-label text-md-right'] ) !!}
 

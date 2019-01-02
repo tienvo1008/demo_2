@@ -5,6 +5,5 @@ return [
     'task_title' => 'Nhiệm vụ',
     'task_add_task' => 'Thêm nhiệm vụ',
     'task_delete_task' => 'Xóa bỏ',
-    'logged' => 'Đăng nhập thành công',
 
 ];

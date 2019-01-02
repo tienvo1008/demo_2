@@ -8,11 +8,8 @@
                 <div class="card-header">@lang('login.reset')</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    @include('common.errors')
+
                     {!! Form::open(['method'=>'POST', 'routes'=>'password.email']) !!}
 
                         <div class="form-group row">

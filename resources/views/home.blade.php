@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    @lang('messages.logged')
+                    You are logged in!
                 </div>
             </div>
         </div>
